@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Desain web</title>
+	<meta name="viewport" content="width=device-width, initialscale=1">
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+	<style>
+		body {
+			margin:0;
+			padding: 0;
+			background: #fff;
+
+		}
+		.grid-container {
+			width: 100vw;
+  			height: 100vh;
+  			font-weight: normal;
+  			font-size: 20px;
+  			display: grid;
+  			grid-template-columns: repeat(3, 1fr);
+  			grid-template-rows: 50px 1fr 1fr 100px;
+  			grid-gap: 10px;
+  			padding: 10px;
+  			box-sizing: border-box;
+		}
+		.grid-container div {
+			padding: 10px;
+			
+		}
+		.header {
+			grid-column-start: 1;
+			grid-column-end: 4;
+			background: lightgrey;
+			padding: 10px;
+			margin: 0px;
+		}
+		
+		.content-large {
+			grid-row-start: 2;
+			grid-row-end: span 2;
+			grid-column-start: 1;
+			grid-column-end: 3;
+			color: black;
+			background: lightgrey;
+		}
+		.content-small {
+			background: lightgrey;
+		}
+		.footer {
+			grid-column: 1 / span 3;
+			background-color: lightgrey;
+		}
+	</style>
+</head>
+<body>
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+	<div class="grid-container">
+		<div class="header">ASTRID NADIA ALIMAH K3521013</div>
+		<div class="content-large">TESTIMONI</div>
+		<div class="content-small">KRITIK</div>
+		<div class="content-small">SARAN</div>
+		<div class="footer">FOOTER</div>
+	</div>
+</body>
+</html>
