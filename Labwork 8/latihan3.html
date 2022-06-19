@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>jQuery</title>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			var maxlength = 500;
+			$("#description").keyup(function(){
+				var currentlength = $(this).val().length;
+				var tersisa = maxlength-currentlength;
+				$("#huruf").html(currentlength+" huruf");
+				$("#tersisa").html(tersisa+" tersisa");
+			});
+		});
+	</script>
+
+</head>
+<body>
+	<div class="formdiv"> 
+	<center>
+		<h1>Penghitung Karakter</h1>
+		<br>
+		<form>
+		<textarea name='description' id='description' rows="4" cols="60"></textarea>
+		
+		<h3><p>Jumlah Huruf :</p></h3>
+		<h3><p id="huruf"></p>
+		<p id="tersisa"></p></h3>
+		<div id='bar'></div>
+		
+		
+		</form>
+	</center> 
+
+ 
+</div>
+</body>
+</html>
